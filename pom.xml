@@ -6,7 +6,7 @@
 	<groupId>com.maciek</groupId>
 	<artifactId>video-rental-store</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>video-rental-store</name>
 	<description>Project for the video rental store</description>
