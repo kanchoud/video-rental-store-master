@@ -6,7 +6,7 @@
 	<groupId>com.maciek</groupId>
 	<artifactId>video-rental-store</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>video-rental-store</name>
 	<description>Project for the video rental store</description>
@@ -63,9 +63,21 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.assertj</groupId>
-			<artifactId>assertj-core</artifactId>
+			<artifactId>assertj-core</artifactId> 
 			<version>3.2.0</version>
 			<scope>test</scope>
 		</dependency>

@@ -13,14 +13,21 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+
 
 import java.sql.Date;
 
 @SpringBootApplication
-public class VideoRentalStoreApplication {
+public class VideoRentalStoreApplication extends org.springframework.boot.web.support.SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication.run(VideoRentalStoreApplication.class, args);
+	}
+	
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(VideoRentalStoreApplication.class);
 	}
 
 	@Autowired
